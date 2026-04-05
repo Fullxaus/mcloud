@@ -1,0 +1,50 @@
+name: Java CI with Gradle
+
+on:
+  push:
+    branches:
+      - main
+      - 'feature/*'
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Клонируем репозиторий
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2. Устанавливаем JDK 21
+      - name: Set up JDK 21
+        uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      # 3. Делаем Gradle-обёртку исполняемой
+      - name: Prepare Gradle wrapper
+        run: chmod +x gradlew
+
+      # 4. Очистка кэша Gradle
+      - name: Clean Gradle cache
+        run: ./gradlew clean --no-daemon
+
+      # 5. Проверка форматирования Spotless (Google Java Format)
+      - name: Run Spotless check
+        run: ./gradlew spotlessCheck --no-daemon
+
+      # 6. Сборка и тесты с JaCoCo (если форматирование прошло)
+      - name: Build and run tests with JaCoCo
+        run: ./gradlew clean build test jacocoTestReport --no-daemon
+
+      # 7. Загружаем HTML-отчёт JaCoCo как артефакт
+      - name: Upload JaCoCo coverage report
+        uses: actions/upload-artifact@v4
+        with:
+          name: jacoco-report-${{ github.run_id }}
+          path: build/reports/jacoco/test/html
+          retention-days: 7

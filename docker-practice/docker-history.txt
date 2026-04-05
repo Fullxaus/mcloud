@@ -1,0 +1,3 @@
+IMAGE          CREATED       CREATED BY                SIZE      COMMENT
+452a468a4bf9   13 days ago   CMD ["/hello"]            0B        buildkit.dockerfile.v0
+<missing>      13 days ago   COPY hello / # buildkit   16.4kB    buildkit.dockerfile.v0

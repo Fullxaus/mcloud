@@ -1,0 +1,9 @@
+CONTAINER ID   IMAGE                COMMAND                  CREATED          STATUS                      PORTS                    NAMES
+97abd455cae9   hello-world          "/hello"                 10 seconds ago   Exited (0) 9 seconds ago                             silly_kalam
+c3f4b9c6bf04   employe-app          "java -jar /app/app.…"   12 days ago      Exited (1) 4 days ago                                employe-app-1
+63ad8ebc3fa6   postgres:16-alpine   "docker-entrypoint.s…"   12 days ago      Exited (255) 4 days ago     0.0.0.0:5434->5432/tcp   employe-postgres
+7420b0b6d1ab   postgres:16-alpine   "docker-entrypoint.s…"   2 weeks ago      Exited (255) 13 days ago    0.0.0.0:5433->5432/tcp   work-postgres
+c8c911cb7a3a   postgres:16-alpine   "docker-entrypoint.s…"   4 weeks ago      Exited (0) 2 weeks ago                               combats-db
+4920a4f03be8   postgres:17          "docker-entrypoint.s…"   5 weeks ago      Exited (1) 5 weeks ago                               blissful_yonath
+d0d4f377926a   postgres:17          "docker-entrypoint.s…"   5 weeks ago      Exited (1) 5 weeks ago                               keen_carver
+3c395fd422aa   postgres:17          "docker-entrypoint.s…"   7 weeks ago      Exited (255) 2 weeks ago    0.0.0.0:5432->5432/tcp   postgres-crm

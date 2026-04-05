@@ -1,0 +1,46 @@
+[
+    {
+        "Id": "sha256:452a468a4bf985040037cb6d5392410206e47db9bf5b7278d281f94d1c2d0931",
+        "RepoTags": [
+            "hello-world:latest"
+        ],
+        "RepoDigests": [
+            "hello-world@sha256:452a468a4bf985040037cb6d5392410206e47db9bf5b7278d281f94d1c2d0931"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-03-23T21:33:59.562202219Z",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/hello"
+            ],
+            "WorkingDir": "/"
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 16227,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:897b3f2a7c1bc2f3d02432f7892fe31c6272c521ad4d70257df624504a3238b4"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-04-05T23:11:02.872126861Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:452a468a4bf985040037cb6d5392410206e47db9bf5b7278d281f94d1c2d0931",
+            "size": 12212
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "docker.io/library/hello-world"
+                }
+            ]
+        }
+    }
+]

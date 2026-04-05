@@ -1,0 +1,6 @@
+WARNING: This output is designed for human readability. For machine-readable output, please use --format.
+IMAGE                ID             DISK USAGE   CONTENT SIZE   EXTRA
+employe-app:latest   452b24c02163        518MB          154MB   U    
+hello-world:latest   452a468a4bf9       25.9kB         9.49kB   U    
+postgres:16-alpine   20edbde7749f        395MB          111MB   U    
+postgres:17          2006493727bd        645MB          167MB   U    
