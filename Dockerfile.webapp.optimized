@@ -1,0 +1,12 @@
+# --- Stage 1: Build ---
+FROM eclipse-temurin:21-jdk AS builder
+WORKDIR /build
+COPY src/main/java/ru/mentee/power/mcloud_7/WebApp.java .
+RUN javac -d out WebApp.java
+
+# --- Stage 2: Runtime ---
+FROM eclipse-temurin:21-jre-alpine
+WORKDIR /app
+COPY --from=builder /build/out/ .
+EXPOSE 8080
+CMD ["java", "ru.mentee.power.mcloud_7.WebApp"]

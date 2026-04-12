@@ -3,7 +3,10 @@
 .vscode/
 *.class
 *.jar
+*.log
 target/
 build/
 .git/
 .gitignore
+.gradle/
+*.md

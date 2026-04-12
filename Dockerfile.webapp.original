@@ -1,0 +1,6 @@
+FROM openjdk:21
+WORKDIR /app
+COPY src/main/java/ru/mentee/power/mcloud_7/WebApp.java .
+RUN javac WebApp.java
+EXPOSE 8080
+CMD ["java", "WebApp"]
