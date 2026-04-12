@@ -6,18 +6,18 @@
 
 - `NumberGuessGame.java` - интерактивная игра "Угадай число"
 - `TextAnalyzer.java` - утилита анализа текста из командной строки
-- `Dockerfile.game` (в корне проекта) - образ для игры
-- `Dockerfile.analyzer` (в корне проекта) - образ для анализатора
+- `docker/mcloud_6/Dockerfile.game` - образ для игры
+- `docker/mcloud_6/Dockerfile.analyzer` - образ для анализатора
 
 ## Сборка образов
 
 ```bash
 cd <корень проекта>
-docker build -f Dockerfile.game -t game:v1.0 .
+docker build -f docker/mcloud_6/Dockerfile.game -t game:v1.0 .
 ```
 
 ```bash
-docker build -f Dockerfile.analyzer -t analyzer:v1.0 .
+docker build -f docker/mcloud_6/Dockerfile.analyzer -t analyzer:v1.0 .
 ```
 
 ## Запуск контейнеров

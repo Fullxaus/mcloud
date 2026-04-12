@@ -1,6 +1,6 @@
 # Практическая работа: Docker на Windows
 
-Все материалы работы лежат в каталоге **`docker-practice/`** в корне Gradle-проекта `mcloud` — этот каталог открывается в **IntelliJ IDEA** вместе с проектом.
+Все материалы работы лежат в каталоге **`docs/docker-practice/`** в корне Gradle-проекта `mcloud` — этот каталог открывается в **IntelliJ IDEA** вместе с проектом.
 
 Среда: **Windows 10/11**, **Docker Desktop**, движок в режиме **WSL 2** (`Context: desktop-linux`). Образы **alpine**, **ubuntu** и **busybox** намеренно **не загружались** (задание выполняется только в рамках установки на Windows и исследования `hello-world`).
 
