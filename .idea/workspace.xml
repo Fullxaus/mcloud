@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4825a05b-b9c3-42ba-8e7c-4ef106f95bea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile.analyzer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile.game" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_6/NumberGuessGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_6/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_6/TextAnalyzer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile.webapp.optimized" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile.webapp.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_7/WebApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/mcloud-5.1" />
+        <entry key="$PROJECT_DIR$" value="feature/mcloud-6" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,25 +70,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.mcloud [:ru.mentee.power.mcloud_6.NumberGuessGame.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.mcloud [:ru.mentee.power.mcloud_6.TextAnalyzer.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.mcloud [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.mcloud [spotlessApply].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/mcloud-6&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/projects/mcloud/mcloud&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/projects/mcloud/mcloud/src/main/java/crm/work/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.mcloud [:ru.mentee.power.mcloud_6.NumberGuessGame.main()].executor": "Run",
+    "Gradle.mcloud [:ru.mentee.power.mcloud_6.TextAnalyzer.main()].executor": "Run",
+    "Gradle.mcloud [build].executor": "Run",
+    "Gradle.mcloud [spotlessApply].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/mcloud-7",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/projects/mcloud/mcloud",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/projects/mcloud/mcloud/src/main/java/crm/work/Main.java",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\projects\mcloud\mcloud" />
@@ -104,8 +100,8 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="gradle build" />
       <command value="gradle spotlessApply" />
+      <command value="gradle build" />
     </option>
   </component>
   <component name="RunManager" selected="Gradle.mcloud [build]">
@@ -208,6 +204,7 @@
       <workItem from="1775638015960" duration="1875000" />
       <workItem from="1775645040576" duration="702000" />
       <workItem from="1775891894357" duration="376000" />
+      <workItem from="1775980334976" duration="2262000" />
     </task>
     <servers />
   </component>
