@@ -1,0 +1,5 @@
+FROM eclipse-temurin:21-jdk
+WORKDIR /app
+COPY src/main/java/ru/mentee/power/mcloud_6/TextAnalyzer.java .
+RUN javac -d out TextAnalyzer.java
+ENTRYPOINT ["java", "-cp", "/app/out", "ru.mentee.power.mcloud_6.TextAnalyzer"]
