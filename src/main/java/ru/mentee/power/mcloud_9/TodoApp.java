@@ -88,8 +88,7 @@ public class TodoApp {
   }
 
   private static void completeTodo(Connection conn, int id) throws SQLException {
-    PreparedStatement ps =
-        conn.prepareStatement("UPDATE todos SET completed = true WHERE id = ?");
+    PreparedStatement ps = conn.prepareStatement("UPDATE todos SET completed = true WHERE id = ?");
     ps.setInt(1, id);
     int rows = ps.executeUpdate();
     if (rows > 0) {
