@@ -1,0 +1,37 @@
+services:
+  todo-app:
+    build:
+      context: ../..
+      dockerfile: docker/mcloud_9/Dockerfile
+    stdin_open: true
+    tty: true
+    environment:
+      - DATABASE_URL=jdbc:postgresql://postgres:5432/tododb?user=todouser&password=todopass
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - todo-network
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: tododb
+      POSTGRES_USER: todouser
+      POSTGRES_PASSWORD: todopass
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - todo-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U todouser -d tododb"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres-data:
+
+networks:
+  todo-network:

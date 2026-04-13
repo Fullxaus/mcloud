@@ -5,24 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4825a05b-b9c3-42ba-8e7c-4ef106f95bea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/docker-deploy.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/mcloud_9/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/mcloud_9/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/mcloud_9/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_9/TodoApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile.analyzer" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile.game" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile.webapp.optimized" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile.webapp.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-practice/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-practice/docker-containers.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-practice/docker-disk-usage.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-practice/docker-hello-output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-practice/docker-hello-run.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-practice/docker-history.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-practice/docker-images.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-practice/docker-info.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-practice/docker-inspect.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-practice/docker-version.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_6/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_6/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +45,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/mcloud-7" />
+        <entry key="$PROJECT_DIR$" value="feature/mcloud-8" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -87,10 +75,11 @@
   "keyToString": {
     "Gradle.mcloud [:ru.mentee.power.mcloud_6.NumberGuessGame.main()].executor": "Run",
     "Gradle.mcloud [:ru.mentee.power.mcloud_6.TextAnalyzer.main()].executor": "Run",
+    "Gradle.mcloud [:ru.mentee.power.mcloud_9.TodoApp.main()].executor": "Run",
     "Gradle.mcloud [build].executor": "Run",
     "Gradle.mcloud [spotlessApply].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/mcloud-8",
+    "git-widget-placeholder": "feature/mcloud-9",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/projects/mcloud/mcloud",
     "node.js.detected.package.eslint": "true",
@@ -100,6 +89,11 @@
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/projects/mcloud/mcloud/src/main/java/crm/work/Main.java",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -117,7 +111,7 @@
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.mcloud [build]">
+  <component name="RunManager" selected="Application.TodoApp">
     <configuration name="NumberGuessGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.mentee.power.mcloud_6.NumberGuessGame" />
       <module name="mcloud.main" />
@@ -137,6 +131,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.mentee.power.mcloud_6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.mentee.power.mcloud_9.TodoApp" />
+      <module name="mcloud.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.mentee.power.mcloud_9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -190,6 +197,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TodoApp" />
         <item itemvalue="Application.TextAnalyzer" />
         <item itemvalue="Application.NumberGuessGame" />
         <item itemvalue="Gradle.mcloud [spotlessApply]" />
@@ -217,7 +225,9 @@
       <workItem from="1775638015960" duration="1875000" />
       <workItem from="1775645040576" duration="702000" />
       <workItem from="1775891894357" duration="376000" />
-      <workItem from="1775980334976" duration="5410000" />
+      <workItem from="1775980334976" duration="5782000" />
+      <workItem from="1776105083043" duration="1521000" />
+      <workItem from="1776106881804" duration="395000" />
     </task>
     <servers />
   </component>
