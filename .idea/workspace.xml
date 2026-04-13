@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4825a05b-b9c3-42ba-8e7c-4ef106f95bea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/daf41c24-9828-4242-b246-6ace8f87c7ca.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/daf41c24-9828-4242-b246-6ace8f87c7ca/storage_v2/_src_/database/tododb.RHs9zA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/mcloud_9/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/mcloud_9/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/mcloud_9/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_9/TodoApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/mcloud_10/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/mcloud_10/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_10/GatewayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_10/ProcessingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_10/StorageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +45,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/mcloud-8" />
+        <entry key="$PROJECT_DIR$" value="feature/mcloud-9.1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -83,7 +79,7 @@
     "Gradle.mcloud [build].executor": "Run",
     "Gradle.mcloud [spotlessApply].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/mcloud-9",
+    "git-widget-placeholder": "feature/mcloud-10",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/projects/mcloud/mcloud",
     "node.js.detected.package.eslint": "true",
@@ -111,8 +107,8 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="gradle spotlessApply" />
       <command value="gradle build" />
+      <command value="gradle spotlessApply" />
     </option>
   </component>
   <component name="RunManager" selected="Gradle.mcloud [spotlessApply]">
@@ -231,7 +227,8 @@
       <workItem from="1775891894357" duration="376000" />
       <workItem from="1775980334976" duration="5782000" />
       <workItem from="1776105083043" duration="1521000" />
-      <workItem from="1776106881804" duration="1067000" />
+      <workItem from="1776106881804" duration="1433000" />
+      <workItem from="1776119149166" duration="1607000" />
     </task>
     <servers />
   </component>
