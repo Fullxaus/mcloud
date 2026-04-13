@@ -1,0 +1,59 @@
+services:
+  gateway:
+    build:
+      context: ../..
+      dockerfile: docker/mcloud_10/Dockerfile
+      args:
+        SERVICE: GatewayService
+    ports:
+      - "8080:8080"
+    networks:
+      - public-net
+      - internal-net
+    depends_on:
+      - processing
+
+  processing:
+    build:
+      context: ../..
+      dockerfile: docker/mcloud_10/Dockerfile
+      args:
+        SERVICE: ProcessingService
+    networks:
+      - internal-net
+      - storage-net
+    depends_on:
+      - storage
+
+  storage:
+    build:
+      context: ../..
+      dockerfile: docker/mcloud_10/Dockerfile
+      args:
+        SERVICE: StorageService
+    networks:
+      - storage-net
+    volumes:
+      - storage-data:/app/data
+
+  redis:
+    image: redis:7-alpine
+    networks:
+      - storage-net
+    command: redis-server --appendonly yes
+    volumes:
+      - redis-data:/data
+
+networks:
+  public-net:
+    driver: bridge
+  internal-net:
+    driver: bridge
+    internal: true
+  storage-net:
+    driver: bridge
+    internal: true
+
+volumes:
+  storage-data:
+  redis-data:
