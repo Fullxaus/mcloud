@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4825a05b-b9c3-42ba-8e7c-4ef106f95bea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docker/mcloud_10/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/mcloud_10/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_10/GatewayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_10/ProcessingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_10/StorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/mcloud_11/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/mcloud_11/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/mcloud_11/pod.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/mcloud_11/service.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/mcloud-9.1" />
+        <entry key="$PROJECT_DIR$" value="feature/mcloud-10" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,6 +61,10 @@
     &quot;accountId&quot;: &quot;8564c08d-8162-48c0-8aea-522a76303cac&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -79,7 +82,7 @@
     "Gradle.mcloud [build].executor": "Run",
     "Gradle.mcloud [spotlessApply].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/mcloud-10",
+    "git-widget-placeholder": "feature/mcloud-11",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/projects/mcloud/mcloud",
     "node.js.detected.package.eslint": "true",
@@ -228,7 +231,9 @@
       <workItem from="1775980334976" duration="5782000" />
       <workItem from="1776105083043" duration="1521000" />
       <workItem from="1776106881804" duration="1433000" />
-      <workItem from="1776119149166" duration="1607000" />
+      <workItem from="1776119149166" duration="2090000" />
+      <workItem from="1776341348750" duration="2727000" />
+      <workItem from="1776445558534" duration="1212000" />
     </task>
     <servers />
   </component>
