@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: calculator-v2
+  namespace: mcloud-12
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: calculator
+      version: v2
+  template:
+    metadata:
+      labels:
+        app: calculator
+        version: v2
+    spec:
+      containers:
+      - name: calculator
+        image: calculator-v2:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8080
+        env:
+        - name: VERSION
+          value: "v2"
