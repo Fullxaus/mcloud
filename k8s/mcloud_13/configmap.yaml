@@ -1,0 +1,33 @@
+# Плоские ключи — для envFrom (имена совместимы с переменными окружения).
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: calculator-config
+  namespace: mcloud-13
+data:
+  SERVER_PORT: "8080"
+  LOG_LEVEL: "INFO"
+  DATABASE_HOST: "postgres-service"
+  DATABASE_PORT: "5432"
+  DATABASE_NAME: "calculator"
+  CACHE_ENABLED: "false"
+  SAVE_TO_DATABASE: "true"
+  EXTERNAL_API_BASE: "https://httpbin.org"
+  # Для httpbin проверка Bearer: https://httpbin.org/bearer
+  EXTERNAL_API_VALIDATE_PATH: "/bearer"
+---
+# Файлы под /app/config — не используются в envFrom (ключи с точками недопустимы как env).
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: calculator-settings
+  namespace: mcloud-13
+data:
+  application.properties: |
+    LOG_LEVEL=INFO
+    SAVE_TO_DATABASE=true
+    EXTERNAL_API_BASE=https://httpbin.org
+    EXTERNAL_API_VALIDATE_PATH=/bearer
+  database.properties: |
+    jdbc.connectTimeout=5000
+    jdbc.loginTimeout=5

@@ -1,0 +1,17 @@
+# Локальный PostgreSQL для mcloud_13 (IntelliJ / отладка).
+# Запуск из каталога mcloud:
+#   docker compose -f docker/mcloud_13/docker-compose.postgres.yml up -d
+#
+# Совпадает с демо-учёткой из k8s/mcloud_13/secret.yaml:
+#   user: calculator / password: calc_secret_2026 / db: calculator
+#
+# Хост-слушатель 55432, чтобы не мешать другому Postgres на localhost:5432 (напр. TodoApp).
+services:
+  postgres-mcloud13:
+    image: postgres:16-alpine
+    ports:
+      - "55432:5432"
+    environment:
+      POSTGRES_USER: calculator
+      POSTGRES_PASSWORD: calc_secret_2026
+      POSTGRES_DB: calculator
