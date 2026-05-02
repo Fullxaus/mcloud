@@ -5,23 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4825a05b-b9c3-42ba-8e7c-4ef106f95bea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/ConfigurableCalculator__mcloud_13__PostgreSQL_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/mcloud_13/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/mcloud_13/docker-compose.postgres.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/mcloud_13/run.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/mcloud_13/calculator-deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/mcloud_13/calculator-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/mcloud_13/configmap.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/mcloud_13/namespace.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/mcloud_13/postgres.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/mcloud_13/secret.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_13/ConfigurableCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_13/DatabaseConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_13/ExternalApiClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/config/ConfigManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/config/Credentials.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/vault/DatabaseCredentials.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/vault/EnableVault.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/vault/VaultConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/vault/VaultLeaseAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/mentee/power/vault/VaultIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/mentee/power/vault/VaultIntegrationTestApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_13/ConfigurableCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_13/ConfigurableCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_13/DatabaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_13/DatabaseConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_13/ExternalApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mentee/power/mcloud_13/ExternalApiClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +52,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/mcloud-12" />
+        <entry key="$PROJECT_DIR$" value="feature/mcloud-13" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -86,33 +82,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.mcloud [:ru.mentee.power.mcloud_12.CalculatorV1.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.mcloud [:ru.mentee.power.mcloud_12.SimpleWebServer.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.mcloud [:ru.mentee.power.mcloud_6.NumberGuessGame.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.mcloud [:ru.mentee.power.mcloud_6.TextAnalyzer.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.mcloud [:ru.mentee.power.mcloud_9.TodoApp.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.mcloud [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.mcloud [spotlessApply].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/mcloud-13&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/projects/mcloud/mcloud&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/projects/mcloud/mcloud/src/main/java/crm/work/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.mcloud [:ru.mentee.power.mcloud_12.CalculatorV1.main()].executor": "Run",
+    "Gradle.mcloud [:ru.mentee.power.mcloud_12.SimpleWebServer.main()].executor": "Run",
+    "Gradle.mcloud [:ru.mentee.power.mcloud_6.NumberGuessGame.main()].executor": "Run",
+    "Gradle.mcloud [:ru.mentee.power.mcloud_6.TextAnalyzer.main()].executor": "Run",
+    "Gradle.mcloud [:ru.mentee.power.mcloud_9.TodoApp.main()].executor": "Run",
+    "Gradle.mcloud [build].executor": "Run",
+    "Gradle.mcloud [spotlessApply].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/mcloud-13.1",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/projects/mcloud/mcloud",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/projects/mcloud/mcloud/src/main/java/crm/work/Main.java",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\projects\mcloud\mcloud" />
@@ -251,7 +247,7 @@
       <workItem from="1776505468733" duration="1207000" />
       <workItem from="1776797552255" duration="1753000" />
       <workItem from="1777714929968" duration="1311000" />
-      <workItem from="1777716371735" duration="804000" />
+      <workItem from="1777716371735" duration="2206000" />
     </task>
     <servers />
   </component>
