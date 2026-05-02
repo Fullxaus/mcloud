@@ -3,6 +3,7 @@ plugins {
     id 'application'
     id 'jacoco'
     id 'com.diffplug.spotless' version '6.25.0'
+    id 'io.spring.dependency-management' version '1.1.7'
 }
 
 application {
@@ -38,14 +39,26 @@ tasks.register('runMcloud13', JavaExec) {
 group = 'crm.work'
 version = '1.0-SNAPSHOT'
 
+dependencyManagement {
+    imports {
+        mavenBom('org.springframework.boot:spring-boot-dependencies:3.4.7')
+        mavenBom('org.testcontainers:testcontainers-bom:1.21.3')
+    }
+}
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
     implementation 'org.postgresql:postgresql:42.7.4'
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.vault:spring-vault-core:3.2.0'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.assertj:assertj-core'
+    testImplementation 'org.testcontainers:junit-jupiter'
+    testImplementation 'org.testcontainers:vault'
 }
 
 test {
