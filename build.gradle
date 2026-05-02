@@ -13,6 +13,28 @@ run {
     standardInput = System.in
 }
 
+/** Локальный запуск ConfigurableCalculator под PostgreSQL из docker/mcloud_13/docker-compose.postgres.yml (хост 55432). */
+tasks.register('runMcloud13', JavaExec) {
+    group = 'application'
+    description =
+        'Запуск ru.mentee.power.mcloud_13.ConfigurableCalculator с env для локальной БД и внешнего API (IntelliJ Run).'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'ru.mentee.power.mcloud_13.ConfigurableCalculator'
+    standardInput = System.in
+    environment([
+        'DATABASE_HOST'              : 'localhost',
+        'DATABASE_PORT'              : '55432',
+        'DATABASE_NAME'              : 'calculator',
+        'DATABASE_USER'              : 'calculator',
+        'DATABASE_PASSWORD'          : 'calc_secret_2026',
+        'SAVE_TO_DATABASE'           : 'true',
+        'EXTERNAL_API_BASE'          : 'https://httpbin.org',
+        'EXTERNAL_API_VALIDATE_PATH' : '/bearer',
+        'API_KEY'                    : 'ext-api-demo-key-xyz',
+        'JWT_SECRET'                 : 'demo-jwt-key',
+    ])
+}
+
 group = 'crm.work'
 version = '1.0-SNAPSHOT'
 
@@ -51,4 +73,18 @@ spotless {
         trimTrailingWhitespace()
         endWithNewline()
     }
+}
+
+tasks.register('configurableCalculatorJar', Jar) {
+    group = 'distribution'
+    description = 'Fat JAR for ru.mentee.power.mcloud_13.ConfigurableCalculator (PostgreSQL driver included)'
+    archiveFileName.set('configurable-calculator.jar')
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    manifest {
+        attributes 'Main-Class': 'ru.mentee.power.mcloud_13.ConfigurableCalculator'
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    with jar
 }
